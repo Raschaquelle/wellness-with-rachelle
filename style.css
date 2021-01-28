@@ -90,7 +90,7 @@ body {
 
 .text {
 	text-align: left;
-	margin: 0% 5% 1% 5%;
+	margin: 0% 10% 1% 10%;
 }
 
 a {
@@ -130,4 +130,11 @@ a {
 .circle-image img {
 	height: 250px;
 	width: auto;
+}
+
+.icon-list-img {
+	height: 50px;
+	width: 50px;
+	margin: 3px;
+	background-color: var(--maroon-color);
 }
