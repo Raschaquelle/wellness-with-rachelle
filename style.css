@@ -4,7 +4,8 @@
 	--maroon-color: #83323E;
     --background-color: #AC7C83;
     --black-color: black;
-    --white-color: white;
+	--white-color: white;
+	--hover-color: #3a3b3c;
 }
 
 body {
@@ -42,7 +43,7 @@ body {
 
 .footer {
 	margin: 1.5% -1%;
-	color: var(--white-color);
+	color: var(--black-color);
 	text-align: center;
     font-size: 10px;
     background: var(--maroon-color);
@@ -137,4 +138,13 @@ a {
 	width: 50px;
 	margin: 3px;
 	background-color: var(--maroon-color);
+}
+
+.text-link {
+	text-decoration: underline;
+	display: inline;
+}
+
+.text-link:hover {
+	color: var(--hover-color);
 }
