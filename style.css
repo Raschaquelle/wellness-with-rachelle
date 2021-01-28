@@ -58,17 +58,17 @@ body {
 
 .title-text {
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
     margin: 1%;
     font-family: 'Merienda', cursive;
 }
 
-.about-text {
+.about-section {
 	text-align: auto;
-	font-size: 14px;
+	font-size: 16px;
 	display: inline-block;
-	margin: 2% 10%;
+	margin: 1% 8%;
 }
 
 .circle {
@@ -79,7 +79,7 @@ body {
 	display: inline;
 	border-radius: 50%;
 	border: 3px solid var(--black-color);
-	margin: 6% 5% 2% 0%;
+	margin: 5% 5% 2% 0%;
 }
 
 .profile-pic {
@@ -91,7 +91,7 @@ body {
 
 .text {
 	text-align: left;
-	margin: 0% 10% 1% 10%;
+	margin: 0% 8% 1% 8%;
 }
 
 a {
@@ -111,7 +111,8 @@ a {
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 2%;
-
+	font-family: 'Merienda', cursive;
+	font-size: 18px;
 }
 
 .description {
@@ -147,4 +148,9 @@ a {
 
 .text-link:hover {
 	color: var(--hover-color);
+}
+.contact-form {
+	text-align: center;
+	width: 100%;
+	height: 500px;
 }
