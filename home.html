@@ -58,10 +58,10 @@
                 are all favorites of mine. I am also a HUGE board gamer - I love to play heavy strategy board 
                 games and am also in the process of co-designing a couple games too.
                 <br><br>
-                <div class = "center">I look forward to connecting with you and leading you on a journey of self-discovery!</div>
+                <div class="center">I look forward to connecting with you and leading you on a journey of self-discovery!</div>
             </div>
         </div>
-        <div class="container">
+        <div class="container center">
             <div class="link-list">
                 <div class="title-text">My Offerings</div>
                 <div class="text">
@@ -150,6 +150,92 @@
                     </div>
                 </a>
             </div>
+        </div>
+        <div class="container">
+            <div class="title-text">Testimonials</div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                <q>We just finished up todays class and for me personally it was so wonderful. Relaxation I didn’t know I needed and now I feel better than ever.</q>
+                <p class="author"></p>
+                </div>
+
+                <div class="mySlides">
+                <q>Thank you so much! This was my first class back from my injury in pregnancy. I'm so glad this is offered</q>
+                <p class="author"></p>
+                </div>
+
+                <div class="mySlides">
+                <q>This is just what I needed</q>
+                <p class="author"></p>
+                </div>
+            
+                <div class="mySlides">
+                <q>She did great catering to all levels</q>
+                <p class="author"></p>
+                </div>
+            
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script type="text/javascript">
+                var slideIndex = 0;
+                showSlides();
+                var slides,dots;
+
+                function showSlides() {
+                    var i;
+                    slides = document.getElementsByClassName("mySlides");
+                    dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex> slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+
+                function plusSlides(position) {
+                    slideIndex +=position;
+                    if (slideIndex> slides.length) {slideIndex = 1}
+                    else if(slideIndex<1){slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                }
+
+                function currentSlide(index) {
+                    if (index> slides.length) {index = 1}
+                    else if(index<1){index = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[index-1].style.display = "block";  
+                    dots[index-1].className += " active";
+                }
+            </script>
         </div>
         <div class="container">
             <div id="contact-me"class="title-text">Contact Me</div>
