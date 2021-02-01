@@ -94,6 +94,10 @@ body {
 	margin: 0% 8% 1% 8%;
 }
 
+.center {
+	text-align: center;
+}
+
 a {
 	color: var(--black-color);
 	text-decoration: none;
